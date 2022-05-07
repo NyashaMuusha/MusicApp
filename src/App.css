@@ -1,11 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap');
 .App {
   text-align: center;
+}
+body{
+  background-color: #fdf7f6 !important;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  color: #6e5d57;
+  
 }
+h1{
+  font-family: Poppins;
+  color:#6e5d57;
+}
+h3{
+  color:#d8a59e;
+
+
+}
+p{
+  padding-top: 10px;
+}
+
+.landingpage-container{
+
+  margin-bottom: 100px;
+  max-width: 50%;
+  margin: 200px auto;
+  display: block;
+}
+
+.subheader{
+  display:grid;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: Poppins;
+}
+
+
+.landingpage-buttons{
+  color: #6e5d57 !important;
+  background-color:#f1dbd8 !important;
+  border-color: #f1dbd8 !important;
+  margin-top: 50px;
+  
+}
+.about-container{
+  margin: 100px 0 120px 0;
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-bottom: 120px;
+
+}
+.playlist-container{
+  margin: 100px 0;
+  width: 70%;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.signoff-container{
+  margin: 100px 0 ;
+
+}
+
+.about-div{
+  min-height: 10em;
+  display:table-cell;
+  vertical-align:middle;
+}
+.social-icons{
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+.list-group-item{
+  border: none !important;
+  padding: 0.5rem 1.2rem !important;
+  background-color: #fdf7f6 !important;
+}
+.footer{
+  background-color:#f6d6d1;
+  font-family: Poppins;
+  text-decoration-style: wavy;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
