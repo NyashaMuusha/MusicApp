@@ -2,7 +2,8 @@
 import './App.css';
 import About from './About';
 import Playlist from './Playlist';
-import { Button, ListGroup, ListGroupItem } from "reactstrap";
+import { Button,Container, ListGroup, ListGroupItem } from "reactstrap";
+import Image from "react-bootstrap/Image";
 import "bootstrap/dist/css/bootstrap.css";
 import SocialIcons from './SocialIcons';
 import { faDeezer, faFacebook, faInstagram, faItunes, faSoundcloud, faSpotify, faTwitter, faWeixin } from '@fortawesome/free-brands-svg-icons';
@@ -13,6 +14,8 @@ import Footer from './Footer';
 
 function App() {
 
+  
+
   function handleListenClick() {
     //do something here
 
@@ -22,44 +25,66 @@ function App() {
     // do something here
 
   }
-  function handleMouseOver(e){
-   //do something here
+  function handleMouseOver() {
+   
 
   }
 
   return (
     <div className="App">
-      <div>
+      <Container>
+      <div >
+        <div className='landing-image'>
+        <Image
+          src="images/logo.png"
+          alt="logo" />
+
+        </div>
+
         <div className='landingpage-container'>
-          <h1 className="mainheader">
-            AYSHAN
-          </h1>
-          <div className="subheader">
+          <div>
+          <h1>AYSHAN</h1>
+            <div className='subheader-text'>
             <ListGroup horizontal>
-              <ListGroupItem>
-                <h3 className='subheadertext'>SINGER</h3>
+                <ListGroupItem>
+                  <h3 style={{paddingRight:225}}>
+                    SINGER
+                  </h3>  
                 </ListGroupItem>
-              <ListGroupItem>
-                <h3 className='subheadertext1'>SONGWRITER</h3>
+
+                <ListGroupItem>
+                  <div>
+                  <h3>
+                    SONGWRITER</h3>
+                  </div>
                 </ListGroupItem>
-            </ListGroup>
+              </ListGroup>
+
+            </div>
+
+          </div>
+
+
+           
+       
+            <div className="subheader">
 
             <div>
               <ListGroup horizontal>
-                <ListGroupItem> 
-                  <Button className='landingpage-buttons' 
-                  onClick={handleListenClick}
-                  onMouseOver={handleMouseOver}>
+                <ListGroupItem>
+                  <Button className='landingpage-buttons'
+                    onClick={handleListenClick}
+                    onMouseOver={handleMouseOver}>
                     LISTEN HERE
-                    </Button>
-                  </ListGroupItem>
-                <ListGroupItem> 
-                  <Button className='landingpage-buttons' 
-                  onClick={handleWatchClick}
-                  onMouseOver={handleMouseOver}>
-                
-                  WATCH HERE</Button>
-                  </ListGroupItem>
+                  </Button>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <Button className='landingpage-buttons'
+                    onClick={handleWatchClick}
+                    onMouseOver={handleMouseOver}>
+
+                    WATCH HERE</Button>
+                </ListGroupItem>
               </ListGroup>
             </div>
             <SocialIcons
@@ -90,6 +115,13 @@ function App() {
       </div>
       <div>
         <div className='signoff-container'>
+          <Image
+            src="images/Coffee.png"
+            alt="coffee" />
+            <Button
+            onMouseOver={handleMouseOver}>
+              Buy Me Coffee
+            </Button>
           <SocialIcons
             iconOne={<FontAwesomeIcon icon={faInstagram} />}
             iconTwo={<FontAwesomeIcon icon={faTwitter} />}
@@ -97,8 +129,11 @@ function App() {
             iconFour={<FontAwesomeIcon icon={faWeixin} />}
           />
         </div>
-        <Footer/>
+        <Footer />
       </div>
+
+      </Container>
+     
     </div>
   );
 }

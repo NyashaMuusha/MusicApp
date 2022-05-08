@@ -9,6 +9,15 @@ function About() {
                     <Card>
                         <div>
                         <p >
+                            What every human being wants is to truly be them selves and be accepted
+                            for who they are. I have often struggled to accept myself, particularly 
+                            the music aspect, it was so close to my heart , i thought letting anyone
+                            into my world would break me.Yet its been the most humbling and healing experience
+                            i have ever had.
+
+                            Through-out the writing process I have cried and laughed, felt weak and strong, happy 
+                            and sad.Through all of it I have experienced what it truly means to live. To want something 
+                            as much as you want to breath.There is nothing I want more.There is nothin I enjoy more.
                             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.”
 
@@ -49,7 +58,7 @@ function About() {
                 <Col sm="6">
                     <CardImg
                         class="card-img-top"
-                        src="https://i.scdn.co/image/ab67616d0000b273ece90ee9bb826335dadb30fa"
+                        src="images/ayshan.png"
                         alt="text" />
 
                 </Col>
